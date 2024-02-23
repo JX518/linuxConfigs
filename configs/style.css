@@ -1,0 +1,30 @@
+* {
+	font-size: 10px;
+	font-family: monospace;
+}
+
+window#waybar {
+	background: #292b2e;
+	color: #fdf6e3;
+}
+
+window#waybar.hidded {
+    opacity: 0.2;
+}
+
+#clock.1,
+#clock.2,
+#clock.3,
+#pulseaudio,
+#battery,
+#pulseaudio {
+	color: #53e6eb;
+}
+#battery {
+	color: #c8fe24;
+}
+#clock,
+#pulseaudio,
+#battery{
+	padding: 0 3px;
+}

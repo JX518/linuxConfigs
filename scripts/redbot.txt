@@ -1,0 +1,2 @@
+source /home/xujus/Downloads/redbot/bin/activate
+redbot JX518
