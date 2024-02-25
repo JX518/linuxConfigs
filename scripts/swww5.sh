@@ -1,7 +1,7 @@
 #!/bin/bash
 if pidof swww-daemon 
 then
-	swww img ~/Pictures/Wallpaper/swww0.*
+	swww img ~/Pictures/Wallpaper/swww.*
 	exec swww kill
 else
 	swww init
