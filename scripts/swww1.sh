@@ -4,5 +4,5 @@ then
 	exec swww kill
 else
 	swww init
-	swww img ~/Pictures/Wallpaper/swww.gif
+	swww img ~/Pictures/Wallpaper/swww1.*
 fi
