@@ -5,3 +5,4 @@
 #
 QT_QPA_PLATFORMTHEME=qt5ct
 EDITOR=vim
+GIT_EDITOR=emacs
