@@ -29,9 +29,10 @@
 (use-package multiple-cursors
   :diminish
   :bind(("M-n". mc/insert-numbers)
+	("M-l". mc/insert-letters)
+	("M-w". mc/mark-all-like-this)
 	("M-<down>". mc/mark-next-like-this)
  	("M-<up>". mc/mark-previous-like-this)
-	("M-s". mc/mark-all-words-like-this)
 	("C-S-<mouse-1>". mc/add-cursor-on-click))
   :config
    )
