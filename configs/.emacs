@@ -28,7 +28,11 @@
 
 (use-package multiple-cursors
   :diminish
-  :bind(("M-n" . mc/insert-numbers))
+  :bind(("M-n". mc/insert-numbers)
+	("M-<down>". mc/mark-next-like-this)
+ 	("M-<up>". mc/mark-previous-like-this)
+	("M-s". mc/mark-all-words-like-this)
+	("C-S-<mouse-1>". mc/add-cursor-on-click))
   :config
-  )
+   )
 (global-set-key (kbd "M-SPC") 'set-rectangular-region-anchor)
