@@ -6,6 +6,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(leuven-dark))
+ '(inhibit-startup-screen t)
  '(package-selected-packages '(## multiple-cursors)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -30,7 +31,7 @@
   :diminish
   :bind(("M-n". mc/insert-numbers)
 	("M-l". mc/insert-letters)
-	("M-w". mc/mark-all-like-this)
+	("M-s". mc/mark-all-like-this)
 	("M-<down>". mc/mark-next-like-this)
  	("M-<up>". mc/mark-previous-like-this)
 	("C-S-<mouse-1>". mc/add-cursor-on-click))
