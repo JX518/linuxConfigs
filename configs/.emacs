@@ -1,5 +1,4 @@
-(add-hook 'text-mode-hook 'display-line-numbers-mode)
-(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+(global-display-line-numbers-mode 1)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -31,10 +30,11 @@
   :diminish
   :bind(("M-n". mc/insert-numbers)
 	("M-l". mc/insert-letters)
-	("M-s". mc/mark-all-like-this)
+	("M-s". mc/mark-all-words-like-this)
 	("M-<down>". mc/mark-next-like-this)
  	("M-<up>". mc/mark-previous-like-this)
 	("C-S-<mouse-1>". mc/add-cursor-on-click))
   :config
    )
 (global-set-key (kbd "M-SPC") 'set-rectangular-region-anchor)
+(global-set-key (kbd "M-m") 'pp-eval-expression)
