@@ -4,7 +4,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(modus-vivendi))
+ '(custom-enabled-themes nil)
  '(global-display-line-numbers-mode t)
  '(inhibit-startup-screen t)
  '(package-selected-packages '(multiple-cursors ##)))
@@ -16,9 +16,13 @@
  ;; If there is more than one, they won't work right.
  )
 
+(if (display-graphic-p)
+    (load-theme 'modus-vivendi)
+)
+
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/"))
+	     '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
 (unless package-archive-contents
   (package-refresh-contents))
@@ -42,3 +46,4 @@
 )
 (global-set-key (kbd "C-x C-e") 'eval-print-last-sexp)
 (global-set-key (kbd "M-SPC") 'set-rectangular-region-anchor)
+
