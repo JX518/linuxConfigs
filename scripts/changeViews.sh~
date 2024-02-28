@@ -1,9 +1,0 @@
-#!/bin/bash
-if test -f "/home/xujus/Documents/configsGit/configs/1.conf"
-then
-	mv /home/xujus/Documents/configsGit/configs/1.conf /home/xujus/Documents/configsGit/configs/2.conf
-	cp /home/xujus/.config/hypr/1.conf /home/xujus/.config/hypr/hyprland.conf 
-else
-	mv /home/xujus/Documents/configsGit/configs/2.conf /home/xujus/Documents/configsGit/configs/1.conf
-	cp /home/xujus/.config/hypr/2.conf /home/xujus/.config/hypr/hyprland.conf
-fi
