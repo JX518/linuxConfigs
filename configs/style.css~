@@ -5,7 +5,7 @@
 
 window#waybar {
 	opacity: 1;
-	background: rgba(34,34,34,.8);
+	background: rgba(34,34,34,.7);
 	color: #000000;
 }
 

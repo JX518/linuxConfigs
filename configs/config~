@@ -5,15 +5,16 @@
 	"position": "top",
 
 	"modules-left": [
-		"battery"
-	],
-	"modules-center": [
 		"clock#1",
 		"clock#2",
 		"clock#3"
 	],
+//	"modules-center": [
+//		" "
+//	],
 	"modules-right": [
-		"pulseaudio"
+		"pulseaudio",
+		"battery"
 	],
 
 	"clock#1": {
