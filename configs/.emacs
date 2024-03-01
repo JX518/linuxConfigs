@@ -46,4 +46,5 @@
 )
 (global-set-key (kbd "C-x C-e") 'eval-print-last-sexp)
 ;;(global-set-key (kbd "M-SPC") 'set-rectangular-region-anchor)
-
+(setq-default indent-tabs-mode t)
+(setq-default backward-delete-char-untabify-method nil)
