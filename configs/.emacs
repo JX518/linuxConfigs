@@ -45,5 +45,5 @@
   :config
 )
 (global-set-key (kbd "C-x C-e") 'eval-print-last-sexp)
-(global-set-key (kbd "M-SPC") 'set-rectangular-region-anchor)
+;;(global-set-key (kbd "M-SPC") 'set-rectangular-region-anchor)
 

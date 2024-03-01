@@ -5,8 +5,6 @@ rm -r /home/xujus/Documents/configsGit/configs/*
 
 #hyprland
 cp -r /home/xujus/.config/hypr/hyprland.conf /home/xujus/Documents/configsGit/configs/hyprland.conf
-cp -r /home/xujus/.config/hypr/1.conf /home/xujus/Documents/configsGit/configs/1.conf
-cp -r /home/xujus/.config/hypr/2.conf /home/xujus/Documents/configsGit/configs/2.conf
 
 #linux environment
 cp -r /etc/environment /home/xujus/Documents/configsGit/configs/environment
