@@ -48,3 +48,4 @@
 ;;(global-set-key (kbd "M-SPC") 'set-rectangular-region-anchor)
 (setq-default indent-tabs-mode t)
 (setq-default backward-delete-char-untabify-method nil)
+(setq display-buffer-base-action '(display-buffer-in-tab))
