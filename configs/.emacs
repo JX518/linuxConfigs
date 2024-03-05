@@ -53,6 +53,9 @@
 (setq-default backward-delete-char-untabify-method nil)
 (setq display-buffer-base-action '(display-buffer-in-tab))
 (setq verilog-auto-newline nil)
-(add-hook 'verilog-mode-hook
-          (lambda () (local-set-key (kbd ";") (insert [?\x3B))))
+(eval-after-load 'verilog-mode
+  '(progn
+     ;; same for all the electric-verilog-* commands in the mode's map (see verilog-mode.el)
+     (define-key verilog-mode-map (kbd ";") 'self-insert-command)
+     (define-key verilog-mode-map (kbd ":") 'self-insert-command)))
 
