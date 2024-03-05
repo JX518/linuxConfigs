@@ -40,6 +40,8 @@
 	("M-s". mc/mark-all-words-like-this)
 	("M-<down>". mc/mark-next-like-this)
  	("M-<up>". mc/mark-previous-like-this)
+	("C-S-<up>". mc/unmark-next-like-this)
+ 	("C-S-<down>". mc/unmark-previous-like-this)
 	("C-S-<mouse-1>". mc/add-cursor-on-click)
   	("M-s-s". mc/mark-all-like-this))
   :config
