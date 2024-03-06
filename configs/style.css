@@ -19,10 +19,10 @@ window#waybar.hidded {
 #pulseaudio,
 #battery,
 #pulseaudio {
-	color: #00ffff;
+	color: #dddddd;
 }
 #battery {
-	color:#00ffff;
+	color:#dddddd;
 }
 #clock,
 #pulseaudio,
