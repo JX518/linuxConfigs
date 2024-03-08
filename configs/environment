@@ -3,6 +3,3 @@
 #
 # Syntax: simple "KEY=VAL" pairs on separate lines
 EDITOR="emacs -nw"
-# QT_IM_MODULE=fcitx # For those who bundle qt im module, e.g. WPS, Anki, you should find a .so file with fcitx in the file name
-# QT_IM_MODULE=ibus # For those who bundle ibus im module shipped with Qt, you should find libibusplatforminputcontextplugin.so in the package.
-# QT_QPA_PLATFORM=xcb QT_IM_MODULE=ibus # Enforce it to run on X11/XWayland and use ibus im module
