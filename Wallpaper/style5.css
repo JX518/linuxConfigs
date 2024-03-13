@@ -42,12 +42,12 @@ window#waybar.hidded {
 #pulseaudio {
     font-weight: bold;
     background: rgba(0,0,0, 0.45);
-    color: #DDD;
+    color: #a00;
 }
 #battery {
     font-weight: bold;
     background: rgba(0,0,0, 0.45);
-    color:#DDD;
+    color:#a00;
 }
 #clock,
 #pulseaudio,

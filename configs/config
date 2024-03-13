@@ -3,29 +3,51 @@
 {
 	"layer": "top",
 	"position": "top",
-
+	"custom/left-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/left-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
 	"modules-left": [
-		"battery"
-	],
-	"modules-center": [
 		"clock#1",
-		"clock#2",
-		"clock#3"
+		"clock#3",
+		"custom/right-arrow-dark"
 	],
+
+	"modules-center": [
+		"custom/left-arrow-dark",
+		"clock#2",
+		"custom/right-arrow-dark",
+
+	],
+
 	"modules-right": [
+		"custom/left-arrow-dark",
+		"battery",
+				"custom/left-arrow-dark",
 		"pulseaudio"
 	],
-
 	"clock#1": {
 		"format": "{:%a}",
 		"tooltip": false
 	},
 	"clock#2": {
-		"format": "{:%H:%M}",
+		"format": "{:%I:%M %p}",
 		"tooltip": false
 	},
 	"clock#3": {
-		"format": "{:%m-%d}",
+		"format": "{:%m-%d-%Y}",
 		"tooltip": false
 	},
 	"pulseaudio": {
