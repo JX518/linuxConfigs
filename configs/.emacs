@@ -7,7 +7,7 @@
  '(custom-enabled-themes nil)
  '(global-display-line-numbers-mode t)
  '(inhibit-startup-screen t)
- '(package-selected-packages '(multiple-cursors ##)))
+ '(package-selected-packages '(ssh multiple-cursors ##)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -59,3 +59,13 @@
      (define-key verilog-mode-map (kbd ";") 'self-insert-command)
      (define-key verilog-mode-map (kbd ":") 'self-insert-command)))
 
+(unless (package-installed-p 'ssh)
+  (package-install 'ssh))
+
+(require 'ssh)
+(add-hook 'ssh-mode-hook
+          (lambda ()
+            (setq ssh-directory-tracking-mode t)
+            (shell-dirtrack-mode t)
+            (setq dirtrackp nil)))
+(put 'upcase-region 'disabled nil)

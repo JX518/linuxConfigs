@@ -1,3 +1,6 @@
 #https://alacritty.org/config-alacritty.html
 [window]
-opacity = 0.65
+opacity = 1
+[colors.primary]
+foreground = "#ffffff"
+background = "#000000"
