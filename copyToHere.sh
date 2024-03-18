@@ -3,6 +3,9 @@ rm -r /home/xujus/Documents/configsGit/Wallpaper/*
 rm -r /home/xujus/Documents/configsGit/scripts/*
 rm -r /home/xujus/Documents/configsGit/configs/*
 
+#hyprshot
+cp /bin/hyprshot-gui /home/xujus/Documents/configsGit/scripts/hyprshot-gui
+
 #hyprland
 cp -r /home/xujus/.config/hypr/hyprland.conf /home/xujus/Documents/configsGit/configs/hyprland.conf
 
