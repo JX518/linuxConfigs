@@ -7,7 +7,8 @@
  '(custom-enabled-themes '(tango-dark))
  '(global-display-line-numbers-mode t)
  '(inhibit-startup-screen t)
- '(package-selected-packages '(ssh multiple-cursors ##)))
+ '(package-selected-packages
+   '(pyvenv which-key dap-mode lsp-ivy helm-lsp lsp-ui ssh multiple-cursors ##)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -24,8 +25,7 @@
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
-(unless package-archive-contents
-  (package-refresh-contents))
+;;(package-refresh-contents)
 
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
@@ -69,3 +69,15 @@
             (shell-dirtrack-mode t)
             (setq dirtrackp nil)))
 (put 'upcase-region 'disabled nil)
+
+;;(use-package pyvenv
+;;  :ensure t
+;;  :config
+;;  (pyvenv-mode t)
+;;  ;; Set correct Python interpreter
+;;  (setq pyvenv-post-activate-hooks
+;;        (list (lambda ()
+;;                (setq zpython-shell-interpreter (concat pyvenv-virtual-env "bin/python3")))))
+;;  (setq pyvenv-post-deactivate-hooks
+;;        (list (lambda ()
+;;                (setq python-shell-interpreter "python3")))))
