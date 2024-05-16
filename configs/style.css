@@ -27,13 +27,13 @@ window#waybar.hidded {
 	color: transparent;
 	background: transparent; /*rgba(255,222,0, 0.4);*/
     	font-size: 11pt;
-}A
+}
 #custom-right-arrow-light {
 	color: transparent;
 	background: transparent; /*rgba(255,222,0, 0.4);*/
     	font-size: 11pt;
 }
-
+#tray,
 #clock.1,
 #clock.2,
 #clock.3,
