@@ -70,6 +70,12 @@
             (setq dirtrackp nil)))
 (put 'upcase-region 'disabled nil)
 
+(defun wlpaste()
+  (interactive)
+  (insert (shell-command-to-string "wl-paste")))
+
+(global-set-key (kbd "C-V") 'wlpaste)
+
 ;;(use-package pyvenv
 ;;  :ensure t
 ;;  :config
