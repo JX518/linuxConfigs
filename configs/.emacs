@@ -35,9 +35,12 @@
 
 (use-package multiple-cursors
   :diminish
+;;mc/skip-to-previous-like-this
+;;mc/skip-to-next-like-this
+;;mc/mark-all-words-like-this
   :bind(("M-n". mc/insert-numbers)
 	("M-l". mc/insert-letters)
-	("M-s". mc/mark-all-words-like-this)
+	("M-s". mc/mark-all-in-region)
 	("M-<down>". mc/mark-next-like-this)
  	("M-<up>". mc/mark-previous-like-this)
 	("C-S-<up>". mc/unmark-next-like-this)
@@ -70,11 +73,11 @@
             (setq dirtrackp nil)))
 (put 'upcase-region 'disabled nil)
 
-(defun wlpaste()
-  (interactive)
-  (insert (shell-command-to-string "wl-paste")))
-
-(global-set-key (kbd "C-V") 'wlpaste)
+;;(defun wlpaste()
+;;  (interactive)
+;;  (insert (shell-command-to-string "wl-paste")))
+;;
+;;(global-set-key (kbd "C-V") 'wlpaste)
 
 ;;(use-package pyvenv
 ;;  :ensure t

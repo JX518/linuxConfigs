@@ -8,6 +8,7 @@ cp /bin/hyprshot-gui /home/xujus/Documents/configsGit/scripts/hyprshot-gui
 
 #hyprland
 cp -r /home/xujus/.config/hypr/hyprland.conf /home/xujus/Documents/configsGit/configs/hyprland.conf
+cp -r /home/xujus/.config/hypr/hyprpaper.conf /home/xujus/Documents/configsGit/configs/hyprpaper.conf
 
 #linux environment
 cp -r /etc/environment /home/xujus/Documents/configsGit/configs/environment
