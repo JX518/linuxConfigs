@@ -81,7 +81,7 @@
 		},
 		"scroll-step": 5,
 		"on-click": "pamixer -t",
-		"on-click-right": "pavucontrol"
+		"on-click-right": "GTK_THEME=Adwaita:dark pavucontrol"
 	},
 	"battery": {
 		"states": {
