@@ -1,6 +1,6 @@
 <domain type='kvm'>
   <name>win10</name>
-  <uuid>79796300-2293-4b2d-ba26-828c48b4e5b0</uuid>
+  <uuid>d0281dce-d9cd-46ba-a121-c2d6b5662685</uuid>
   <metadata>
     <libosinfo:libosinfo xmlns:libosinfo="http://libosinfo.org/xmlns/libvirt/domain/1.0">
       <libosinfo:os id="http://microsoft.com/win/10"/>
@@ -153,6 +153,12 @@
     <controller type='virtio-serial' index='0'>
       <address type='pci' domain='0x0000' bus='0x03' slot='0x00' function='0x0'/>
     </controller>
+    <filesystem type='mount' accessmode='passthrough'>
+      <driver type='virtiofs'/>
+      <source dir='/home/xujus/Documents/QEMU/shared'/>
+      <target dir='shared'/>
+      <address type='pci' domain='0x0000' bus='0x05' slot='0x00' function='0x0'/>
+    </filesystem>
     <interface type='network'>
       <mac address='52:54:00:d2:a3:2a'/>
       <source network='default'/>
