@@ -29,7 +29,7 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #ffffff;
-	background: linear-gradient(65deg, #113333 0%, #226666 100%);
+	background: linear-gradient(65deg, #773300 0%, #550000 100%);
 }
 #pulseaudio {
 	margin-top: 6px;
@@ -40,7 +40,7 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #ffffff;
-	background: linear-gradient(65deg, #299999 0%, #226666 100%);
+	background: linear-gradient(65deg, #662200 0%, #773300 100%);
 }
 #battery {
 	margin-top: 6px;
@@ -55,10 +55,10 @@ window#waybar.hidden {
 }
 #battery.charging, #battery.plugged {
 	color: #ffffff;
-	background: linear-gradient(65deg, #106060 0%, #338888 100%);
+	background: linear-gradient(65deg, #550000 0%, #773300 100%);
 }
 #battery.critical:not(.charging) {
-    background-color: #880000;
+    background-color: #FFFF00;
     color: #ffffff;
 }
 #clock.1 {
@@ -70,7 +70,7 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #ffffff;
-	background: linear-gradient(65deg, #229999 0%, #002222 100%);
+	background: linear-gradient(35deg, #300000 0%, #773300 100%);
 }
 #clock.2 {
 	margin-top: 6px;
@@ -81,7 +81,7 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #ffffff;
-	background: linear-gradient(0deg, #001111 0%, #009999 100%);
+	background: linear-gradient(0deg, #773300 0%, #300000 100%);
 }
 #clock.3 {
 	margin-top: 6px;
@@ -92,7 +92,7 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #ffffff;
-	background: linear-gradient(65deg, #002222 0%, #229999 100%);
+	background: linear-gradient(35deg, #773300 0%, #300000 100%);
 }
 #tray {
 	margin-top: 6px;
@@ -103,5 +103,5 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #000000;
-	background: linear-gradient(65deg, #225555 0%, #44cccc 100%);
+	background: linear-gradient(65deg, #885500 0%, #220000 100%);
 }
