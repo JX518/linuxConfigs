@@ -28,8 +28,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #000000;
-	background: linear-gradient(65deg, #ffffff 0%, #00ccff 100%);
+	color: #ffffff;
+	background: linear-gradient(65deg, #773300 0%, #550000 100%);
 }
 #pulseaudio {
 	margin-top: 6px;
@@ -39,8 +39,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #000000;
-	background: linear-gradient(65deg, #ffffff 0%, #00ffff 100%);
+	color: #ffffff;
+	background: linear-gradient(65deg, #662200 0%, #773300 100%);
 }
 #battery {
 	margin-top: 6px;
@@ -54,8 +54,8 @@ window#waybar.hidden {
 	background: #bbbbbb;
 }
 #battery.charging, #battery.plugged {
-	color: #000000;
-	background: linear-gradient(65deg, #00ffff 0%, #ffffff 100%);
+	color: #ffffff;
+	background: linear-gradient(65deg, #550000 0%, #773300 100%);
 }
 #battery.critical:not(.charging) {
     background-color: #FFFF00;
@@ -69,8 +69,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #000000;
-	background: linear-gradient(35deg, #ffffff 0%, #00ffff 100%);
+	color: #ffffff;
+	background: linear-gradient(35deg, #300000 0%, #773300 100%);
 }
 #clock.2 {
 	margin-top: 6px;
@@ -80,8 +80,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #000000;
-	background: linear-gradient(0deg, #00ffff 0%, #ffffff 100%);
+	color: #ffffff;
+	background: linear-gradient(0deg, #773300 0%, #300000 100%);
 }
 #clock.3 {
 	margin-top: 6px;
@@ -91,8 +91,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #000000;
-	background: linear-gradient(35deg, #00ffff 0%, #ffffff 100%);
+	color: #ffffff;
+	background: linear-gradient(35deg, #773300 0%, #300000 100%);
 }
 #tray {
 	margin-top: 6px;
@@ -103,5 +103,5 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #000000;
-	background: linear-gradient(65deg, #00ffff 0%, #0044ff 100%);
+	background: linear-gradient(65deg, #885500 0%, #220000 100%);
 }
