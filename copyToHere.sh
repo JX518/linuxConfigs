@@ -8,8 +8,6 @@ cp /bin/hyprshot-gui /home/xujus/Documents/configsGit/scripts/hyprshot-gui
 
 #hyprland
 cp -r /home/xujus/.config/hypr/hyprland.conf /home/xujus/Documents/configsGit/configs/hyprland.conf
-cp -r /home/xujus/.config/hypr/hyprland.conf /home/xujus/Documents/configsGit/configs/hyprlandLight.conf
-cp -r /home/xujus/.config/hypr/hyprland.conf /home/xujus/Documents/configsGit/configs/hyprlandDark.conf
 cp -r /home/xujus/.config/hypr/hyprpaper.conf /home/xujus/Documents/configsGit/configs/hyprpaper.conf
 
 #waybar
