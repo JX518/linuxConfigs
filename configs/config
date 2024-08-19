@@ -58,6 +58,7 @@
 			]
 		},
 		"scroll-step": 5,
+		"max-volume": 150,
 		"on-click": "pamixer -t",
 		"on-click-right": "GTK_THEME=Adwaita:dark pavucontrol"
 	},
