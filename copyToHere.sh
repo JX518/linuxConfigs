@@ -19,6 +19,11 @@ cp -r /home/xujus/.config/waybar/config /home/xujus/Documents/configsGit/configs
 #linux environment
 cp -r /etc/environment /home/xujus/Documents/configsGit/configs/environment
 
+#theme
+cp -r /home/xujus/.profile /home/xujus/Documents/configsGit/configs/.profile
+cp -r /home/xujus/.config/gtk-2.0 /home/xujus/Documents/configsGit/configs/gtk-2.0
+cp -r /home/xujus/.config/gtk-3.0 /home/xujus/Documents/configsGit/configs/gtk-3.0
+
 #emacs
 cp -r /home/xujus/.emacs /home/xujus/Documents/configsGit/configs/.emacs
 
