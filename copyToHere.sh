@@ -30,8 +30,8 @@ cp -r /home/xujus/.emacs /home/xujus/Documents/configsGit/configs/.emacs
 #brave
 cp -r /home/xujus/.config/brave-flags.conf /home/xujus/Documents/configsGit/configs/brave-flags.conf
 
-#alacritty terminal
-cp -r /home/xujus/.alacritty.toml /home/xujus/Documents/configsGit/configs/.alacritty.toml
+#kitty terminal
+cp -r /home/xujus/.config/kitty/kitty.conf /home/xujus/Documents/configsGit/configs/kitty.conf
 
 #wallpapers and scripts
 cp -r /home/xujus/Documents/scripts/* /home/xujus/Documents/configsGit/scripts/
