@@ -1,3 +1,4 @@
+(setq inhibit-splash-screen t) 
 (global-display-line-numbers-mode 1)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -5,10 +6,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(tango-dark))
- '(global-display-line-numbers-mode t)
- '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(pyvenv which-key dap-mode lsp-ivy helm-lsp lsp-ui ssh multiple-cursors ##)))
+   '(flycheck company lsp-latex pdf-tools auctex pyvenv which-key dap-mode lsp-ivy helm-lsp lsp-ui ssh multiple-cursors ##)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -72,6 +71,50 @@
             (shell-dirtrack-mode t)
             (setq dirtrackp nil)))
 (put 'upcase-region 'disabled nil)
+
+(unless (package-installed-p 'auctex)
+  (package-install 'auctex))
+
+(unless (package-installed-p 'pdf-tools)
+  (package-install 'pdf-tools))
+
+(require 'pdf-tools)
+
+(unless (package-installed-p 'lsp-mode)
+  (package-install 'lsp-mode))
+
+(unless (package-installed-p 'lsp-ui)
+  (package-install 'lsp-ui))
+
+(unless (package-installed-p 'company)
+  (package-install 'company))
+
+(unless (package-installed-p 'lsp-latex)
+  (package-install 'lsp-latex))
+
+(unless (package-installed-p 'flycheck)
+  (package-install 'flycheck))
+
+(unless (package-installed-p 'xenops)
+  (package-install 'xenops))
+
+(add-to-list 'load-path "/home/xujus/.emacs.d/elpa/lsp-latex-20240803.1436")
+(require 'lsp-latex)
+(setq lsp-latex-texlab-executable "/bin/texlab")
+(setq lsp-tex-server 'texlab)
+
+(with-eval-after-load "tex-mode"
+ (add-hook 'tex-mode-hook 'lsp)
+ (add-hook 'latex-mode-hook 'lsp)
+ (lsp))
+
+;;;; Use pdf-tools to open PDF files
+;;(setq TeX-view-program-selection '((output-pdf "PDF Tools"))
+;;      TeX-source-correlate-start-server t)
+;;
+;;;; Update PDF buffers after successful LaTeX runs
+;;(add-hook 'TeX-after-compilation-finished-functions
+;;          #'TeX-revert-document-buffer)
 
 ;; (setq wl-copy-process nil)
 ;; (defun wl-copy (text)
