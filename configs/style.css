@@ -58,7 +58,7 @@ window#waybar.hidden {
 	background: linear-gradient(65deg, #550000 0%, #773300 100%);
 }
 #battery.critical:not(.charging) {
-    background-color: #FFFF00;
+    background-color: #222222;
     color: #ffffff;
 }
 #clock.1 {

@@ -103,10 +103,9 @@
 (setq lsp-latex-texlab-executable "/bin/texlab")
 (setq lsp-tex-server 'texlab)
 
-(with-eval-after-load "tex-mode"
- (add-hook 'tex-mode-hook 'lsp)
- (add-hook 'latex-mode-hook 'lsp)
- (lsp))
+(use-package lsp-mode
+  :hook
+  ((python-mode . lsp)))
 
 ;;;; Use pdf-tools to open PDF files
 ;;(setq TeX-view-program-selection '((output-pdf "PDF Tools"))
