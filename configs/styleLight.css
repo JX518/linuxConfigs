@@ -29,7 +29,7 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #ffffff;
-	background: linear-gradient(65deg, #773300 0%, #550000 100%);
+	background: linear-gradient(65deg, #317fa4 0%, #166cb8 100%);
 }
 #pulseaudio {
 	margin-top: 6px;
@@ -40,7 +40,7 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #ffffff;
-	background: linear-gradient(65deg, #662200 0%, #773300 100%);
+	background: linear-gradient(65deg, #363b92 0%, #2b3e78 100%);
 }
 #battery {
 	margin-top: 6px;
@@ -55,7 +55,7 @@ window#waybar.hidden {
 }
 #battery.charging, #battery.plugged {
 	color: #ffffff;
-	background: linear-gradient(65deg, #550000 0%, #773300 100%);
+	background: linear-gradient(65deg, #166cb8 0%, #363b92 100%);
 }
 #battery.critical:not(.charging) {
     background-color: #222222;
@@ -70,7 +70,7 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #ffffff;
-	background: linear-gradient(35deg, #300000 0%, #773300 100%);
+	background: linear-gradient(35deg, #4686a8 0%, #2b3e78 100%);
 }
 #clock.2 {
 	margin-top: 6px;
@@ -81,7 +81,7 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #ffffff;
-	background: linear-gradient(0deg, #773300 0%, #300000 100%);
+	background: linear-gradient(0deg, #295287 0%, #267156 100%);
 }
 #clock.3 {
 	margin-top: 6px;
@@ -92,7 +92,7 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #ffffff;
-	background: linear-gradient(35deg, #773300 0%, #300000 100%);
+	background: linear-gradient(35deg, #2b3e78 0%, #2a806a 100%);
 }
 #tray {
 	margin-top: 6px;
@@ -103,5 +103,5 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #000000;
-	background: linear-gradient(65deg, #885500 0%, #220000 100%);
+	background: linear-gradient(65deg, #2b3e78 0%, #295287 100%);
 }
