@@ -29,7 +29,7 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
 	color: #ffffff;
-	background: linear-gradient(65deg, #317fa4 0%, #166cb8 100%);
+	background: linear-gradient(65deg, #317fa4 0%, #363b92 100%);
 }
 #pulseaudio {
 	margin-top: 6px;
@@ -55,7 +55,7 @@ window#waybar.hidden {
 }
 #battery.charging, #battery.plugged {
 	color: #ffffff;
-	background: linear-gradient(65deg, #166cb8 0%, #363b92 100%);
+	background: linear-gradient(65deg, #363b92 0%, #363b92 100%);
 }
 #battery.critical:not(.charging) {
     background-color: #222222;
