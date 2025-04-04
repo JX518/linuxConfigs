@@ -34,5 +34,4 @@ cp -r /home/xujus/.config/brave-flags.conf /home/xujus/Documents/configsGit/conf
 cp -r /home/xujus/.config/kitty/kitty.conf /home/xujus/Documents/configsGit/configs/kitty.conf
 
 #wallpapers and scripts
-cp -r /home/xujus/Programs* /home/xujus/Documents/configsGit/scripts/
 cp -r /home/xujus/Pictures/Wallpaper/* /home/xujus/Documents/configsGit/Wallpaper/
