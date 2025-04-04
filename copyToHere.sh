@@ -12,8 +12,8 @@ cp -r /home/xujus/.config/hypr/hyprpaper.conf /home/xujus/Documents/configsGit/c
 
 #waybar
 cp -r /home/xujus/.config/waybar/style.css /home/xujus/Documents/configsGit/configs/style.css
-cp -r /home/xujus/.config/waybar/style.css /home/xujus/Documents/configsGit/configs/styleLight.css
-cp -r /home/xujus/.config/waybar/style.css /home/xujus/Documents/configsGit/configs/styleDark.css
+cp -r /home/xujus/.config/waybar/styleLight.css /home/xujus/Documents/configsGit/configs/styleLight.css
+cp -r /home/xujus/.config/waybar/styleDark.css /home/xujus/Documents/configsGit/configs/styleDark.css
 cp -r /home/xujus/.config/waybar/config /home/xujus/Documents/configsGit/configs/config
 
 #linux environment
@@ -34,5 +34,5 @@ cp -r /home/xujus/.config/brave-flags.conf /home/xujus/Documents/configsGit/conf
 cp -r /home/xujus/.config/kitty/kitty.conf /home/xujus/Documents/configsGit/configs/kitty.conf
 
 #wallpapers and scripts
-cp -r /home/xujus/Documents/scripts/* /home/xujus/Documents/configsGit/scripts/
+cp -r /home/xujus/Programs* /home/xujus/Documents/configsGit/scripts/
 cp -r /home/xujus/Pictures/Wallpaper/* /home/xujus/Documents/configsGit/Wallpaper/

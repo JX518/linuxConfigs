@@ -1,6 +1,0 @@
-#!/bin/bash
-sleep 4
-ydotool key 125:1 108:1 125:0 108:0
-sleep 2
-ydotool key 125:1 108:1 125:0 108:0
-

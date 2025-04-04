@@ -6,6 +6,7 @@
 	"modules-left": [
 		"clock#2"
 //		"hyprland/workspaces"
+
 	],
 
 	"modules-center": [
@@ -39,7 +40,8 @@
 		"tooltip": false
 	},
 	"clock#2": {
-		"format": "{:%I:%M %p}",
+		"interval": 1,
+		"format": "{:%I:%M:%S %p}",
 		"tooltip": false
 	},
 	"clock#3": {
@@ -63,6 +65,7 @@
 		"on-click-right": "GTK_THEME=Adwaita:dark pavucontrol"
 	},
 	"battery": {
+		"interval": 10,
 		"states": {
 			"good": 95,
 			"warning": 30,
@@ -76,5 +79,20 @@
 			"Bat",
 			"Bat"
 		]
+	},
+	"hyprland/workspaces": {
+                "on-click": "activate",
+		"persistent-workspaces":{
+			"1":[],
+			"2":[],
+			"3":[],
+			"4":[],
+			"5":[],
+			"6":[],
+			"7":[],
+			"8":[],
+			"9":[],
+			"10":[]
+		}
 	}
 }
