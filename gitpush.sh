@@ -7,4 +7,4 @@ git remote add configs git@github.com:JX518/linuxConfigs.git
 git branch -M main
 git add /home/xujus/Documents/configsGit/*
 git commit
-git push -u origin main
+git push -u configs main
