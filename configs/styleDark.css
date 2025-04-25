@@ -119,3 +119,15 @@ window#waybar.hidden {
 	color: #000000;
 	background: linear-gradient(65deg, #885500 0%, #220000 100%);
 }
+#custom-notification {
+	margin-top: 6px;
+	margin-left: 8px;
+	margin-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #ffffff;
+	background: linear-gradient(65deg, #220000 0%, #885500 100%);
+}
