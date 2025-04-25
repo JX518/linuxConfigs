@@ -1,20 +1,31 @@
 #!/bin/bash
 rm -r /home/xujus/Documents/configsGit/Wallpaper/*
 rm -r /home/xujus/Documents/configsGit/scripts/*
-rm -r /home/xujus/Documents/configsGit/configs/*
+rm -r /home/xujus/Documents/configsGit/configs/* 
+mkdir /home/xujus/Documents/configsGit/configs/hypr/
+mkdir /home/xujus/Documents/configsGit/configs/waybar/
+mkdir /home/xujus/Documents/configsGit/configs/swaync/
+
 
 #hyprshot
 cp /bin/hyprshot-gui /home/xujus/Documents/configsGit/scripts/hyprshot-gui
 
+
 #hyprland
-cp -r /home/xujus/.config/hypr/hyprland.conf /home/xujus/Documents/configsGit/configs/hyprland.conf
-cp -r /home/xujus/.config/hypr/hyprpaper.conf /home/xujus/Documents/configsGit/configs/hyprpaper.conf
+cp -r /home/xujus/.config/swaync/style.css /home/xujus/Documents/configsGit/configs/swaync/style.css
+cp -r /home/xujus/.config/swaync/configSchema.json /home/xujus/Documents/configsGit/configs/swaync/configSchema.json
+cp -r /home/xujus/.config/swaync/config.json /home/xujus/Documents/configsGit/configs/swaync/config.json
+
+
+#hyprland
+cp -r /home/xujus/.config/hypr/hyprland.conf /home/xujus/Documents/configsGit/configs/hypr/hyprland.conf
+cp -r /home/xujus/.config/hypr/hyprpaper.conf /home/xujus/Documents/configsGit/configs/hypr/hyprpaper.conf
 
 #waybar
-cp -r /home/xujus/.config/waybar/style.css /home/xujus/Documents/configsGit/configs/style.css
-cp -r /home/xujus/.config/waybar/styleLight.css /home/xujus/Documents/configsGit/configs/styleLight.css
-cp -r /home/xujus/.config/waybar/styleDark.css /home/xujus/Documents/configsGit/configs/styleDark.css
-cp -r /home/xujus/.config/waybar/config /home/xujus/Documents/configsGit/configs/config
+cp -r /home/xujus/.config/waybar/style.css /home/xujus/Documents/configsGit/configs/waybar/style.css
+cp -r /home/xujus/.config/waybar/styleLight.css /home/xujus/Documents/configsGit/configs/waybar/styleLight.css
+cp -r /home/xujus/.config/waybar/styleDark.css /home/xujus/Documents/configsGit/configs/waybar/styleDark.css
+cp -r /home/xujus/.config/waybar/config /home/xujus/Documents/configsGit/configs/waybar/config
 
 #linux environment
 cp -r /etc/environment /home/xujus/Documents/configsGit/configs/environment

@@ -50,16 +50,9 @@
 		"tooltip": false
 	},
 	"pulseaudio": {
-		"format": "{icon} {volume:2}%",
+		"format": "Vol {volume:2}%",
 		"format-bluetooth": "{icon}  {volume}%",
 		"format-muted": "MUTE",
-		"format-icons": {
-			"headphones": "Vol ",
-			"default": [
-				"Vol",
-				"Vol"
-			]
-		},
 		"scroll-step": 5,
 		"max-volume": 150,
 		"on-click": "pamixer -t",
@@ -72,14 +65,7 @@
 			"warning": 30,
 			"critical": 15
 		},
-		"format": "{icon} {capacity}%",
-		"format-icons": [
-			"Bat",
-			"Bat",
-			"Bat",
-			"Bat",
-			"Bat"
-		]
+		"format": "Bat {icon} {capacity}%",
 	},
 	"hyprland/workspaces": {
                 "on-click": "activate",
@@ -99,16 +85,6 @@
 	"custom/notification": {
     		"tooltip": false,
     		"format": "{}",
-    		"format-icons": {
-      			"notification": "{$(swaync-client -c)}",
-      			"none": "0",
-      			"dnd-notification": "{$(swaync-client -c)}",
-      			"dnd-none": "0",
-      			"inhibited-notification": "{$(swaync-client -c)}",
-      			"inhibited-none": "0",
-      			"dnd-inhibited-notification": "{$(swaync-client -c)}",
-      			"dnd-inhibited-none": "0"
-    		},
     		"return-type": "json",
     		"exec-if": "which swaync-client",
     		"exec": "swaync-client -swb",
