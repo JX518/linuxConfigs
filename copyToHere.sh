@@ -26,6 +26,7 @@ cp -r /home/xujus/.config/waybar/style.css /home/xujus/Documents/configsGit/conf
 cp -r /home/xujus/.config/waybar/styleLight.css /home/xujus/Documents/configsGit/configs/waybar/styleLight.css
 cp -r /home/xujus/.config/waybar/styleDark.css /home/xujus/Documents/configsGit/configs/waybar/styleDark.css
 cp -r /home/xujus/.config/waybar/config /home/xujus/Documents/configsGit/configs/waybar/config
+cp -r /home/xujus/.config/waybar/swaync-format.sh /home/xujus/Documents/configsGit/configs/waybar/swaync-format.sh
 
 #linux environment
 cp -r /etc/environment /home/xujus/Documents/configsGit/configs/environment
