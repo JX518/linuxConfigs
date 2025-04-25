@@ -1,4 +1,4 @@
-@define-color cc-bg rgba(46, 46, 46, 0.7);
+@define-color cc-bg rgba(45, 45, 45, 1);
 @define-color noti-border-color rgba(255, 255, 255, 0.15);
 @define-color noti-bg rgba(48, 48, 48, 0.8);
 @define-color noti-bg-opaque rgb(48, 48, 48);
@@ -259,7 +259,10 @@
 }
 
 .control-center {
-  /* The Control Center which contains the old notifications + widgets */
+    /* The Control Center which contains the old notifications + widgets */
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background: @cc-bg;
   color: @text-color;
   border-radius: 12px;
@@ -281,7 +284,7 @@
 
 .control-center .control-center-list .notification .notification-default-action,
 .control-center .control-center-list .notification .notification-action {
-  transition: opacity 400ms ease-in-out, background 0.15s ease-in-out;
+  transition: opacity 100ms ease-in-out, background 0.15s ease-in-out;
 }
 
 .control-center .control-center-list .notification .notification-default-action:hover,
