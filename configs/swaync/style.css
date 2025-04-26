@@ -1,11 +1,11 @@
 @define-color cc-bg rgba(45, 45, 45, 1);
 @define-color noti-border-color rgba(255, 255, 255, 0.15);
-@define-color noti-bg rgba(48, 48, 48, 0.8);
+@define-color noti-bg rgba(48, 48, 48, .6);
 @define-color noti-bg-opaque rgb(48, 48, 48);
 @define-color noti-bg-darker rgb(38, 38, 38);
 @define-color noti-bg-hover rgb(56, 56, 56);
 @define-color noti-bg-hover-opaque rgb(56, 56, 56);
-@define-color noti-bg-focus rgba(68, 68, 68, 0.6);
+@define-color noti-bg-focus rgba(68, 68, 68, 1);
 @define-color noti-close-bg rgba(255, 255, 255, 0.1);
 @define-color noti-close-bg-hover rgba(255, 255, 255, 0.15);
 @define-color text-color rgb(255, 255, 255);
@@ -48,6 +48,7 @@
 .notification-row .notification-background .notification {
   /* The actual notification */
   border-radius: 12px;
+  margin-top: 2px;  
   border: 1px solid @noti-border-color;
   padding: 0;
   transition: background 0.15s ease-in-out;
@@ -83,7 +84,7 @@
 
 .notification-row .notification-background .notification .notification-default-action {
   /* The large action that also displays the notification summary and body */
-  border-radius: 12px;
+    border-radius: 12px;
 }
 
 .notification-row .notification-background .notification .notification-default-action:not(:only-child) {
@@ -133,7 +134,7 @@
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .text-box .body {
-  /* Notification body */
+    /* Notification body */
   font-size: 15px;
   font-weight: normal;
   background: transparent;
@@ -156,7 +157,7 @@
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply {
   /* The inline reply section */
-  margin-top: 4px;
+    margin-top: 4px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-entry {
