@@ -10,7 +10,7 @@ values=$(zenity \
     --combo-values="Specific area|Specific window|Whole screen" \
     --add-entry="Time to wait " \
     --add-combo="Save to" \
-    --combo-values="Clipboard and file|Clipboard only|OCR (English)|OCR (Chinese Traditional)| OCR (Chinese Simplified)" \
+    --combo-values="Clipboard and file|Clipboard only|OCR (English)" \
     --add-combo="Monitor " \
     --combo-values="$(hyprctl -j monitors | jq -r 'map(.name) | join("|")')" \
     --add-combo="Directory " \
@@ -64,14 +64,8 @@ if [ "$clipboard" == "Clipboard only" ]; then
     hyprshot $MODE_OPTION --clipboard-only
 elif [ "$clipboard" == "Clipboard and file" ]; then
     hyprshot $MODE_OPTION -o $FILEDIR -f $FILENAME
-elif [ "$clipboard" == "OCR (English)" ]; then
-    hyprshot $MODE_OPTION -o $FILEDIR -f "OCR.png"
-    tesseract -l eng /home/xujus/Pictures/Screenshots/OCR.png stdout | wl-copy
-elif [ "$clipboard" == "OCR (Chinese Traditional)" ]; then
-    hyprshot $MODE_OPTION -o $FILEDIR -f "OCR.png"
-    tesseract -l chi_tra /home/xujus/Pictures/Screenshots/OCR.png stdout | wl-copy
 else 
     hyprshot $MODE_OPTION -o $FILEDIR -f "OCR.png"
-    tesseract -l chi_sim /home/xujus/Pictures/Screenshots/OCR.png stdout | wl-copy
+    tesseract -l eng /home/xujus/Pictures/Screenshots/OCR.png stdout | wl-copy
 fi
 

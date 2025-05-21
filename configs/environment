@@ -2,11 +2,4 @@
 # This file is parsed by pam_env module
 #
 # Syntax: simple "KEY=VAL" pairs on separate lines
-EDITOR="emacs -nw"
-QT_IM_MODULE='fcitx'
-GTK_IM_MODULE='fcitx'
-SDL_IM_MODULE='fcitx'
-XMODIFIERS='@im=fcitx'
-# QT_QPA_PLATFORM=xcb
-# QT_STYLE_OVERRIDE='fusion'
-# QT_QPA_PLATFORMTHEME='gtk3'
+#

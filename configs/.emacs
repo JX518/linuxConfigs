@@ -6,8 +6,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(manoj-dark))
- '(package-selected-packages
-   '(flycheck company lsp-latex pdf-tools auctex pyvenv which-key dap-mode lsp-ivy helm-lsp lsp-ui ssh multiple-cursors ##)))
+ '(package-selected-packages nil))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
